@@ -34,7 +34,12 @@ class CalendarsController < ApplicationController
       plan = plans.map do |plan|
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
+<<<<<<< HEAD
       wday_num = (wdays.length)
+=======
+      
+      wday_num = count(wday)
+>>>>>>> 4c4c14f5d98d06c3e2c2d821045cfbc90660e464
       if wday_num >= 7
         wday_num = wday_num - 7
       end
